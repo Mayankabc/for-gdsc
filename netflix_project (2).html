@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(64, 62, 62);
+            width:100%;
+            
+        }
+
+        header {
+            /* border: red solid 2px; */
+            height: 80px;
+            
+        }
+
+        header>img {
+            position: relative;
+            height: 100px;
+            width: 140px;
+            left: 90px;
+        }
+
+        header>select {
+            position: absolute;
+            top: 30px;
+            left: 1100px;
+            height: 35px;
+            width: 100px;
+            background-color: rgba(0, 0, 0, 0);
+            color: rgb(255, 255, 255);
+            border: white solid 2px;
+            border-radius: 10%;
+            font-weight: 700;
+        }
+
+        header>button {
+            position: absolute;
+            top: 30px;
+            left: 1230px;
+            height: 35px;
+            background-color: rgb(229, 9, 20);
+            border: red solid 2px;
+            color: rgb(255, 255, 255);
+            border-radius: 10%;
+            width: 80px;
+            font-weight: 500;
+
+
+        }
+
+        #background {
+            /* border: yellow solid 2px; */
+            
+            width: 100%;
+            height: 670px;
+            margin-bottom: 5px;
+            z-index: 1;
+            
+            
+        }
+
+        .written {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: normal;
+
+            text-size-adjust: 100%;
+            display: block;
+
+            margin-top: 25px;
+
+            padding-top: 60px;
+            padding-left: 330px;
+            padding-right: 330px;
+
+        }
+
+        .mail {
+            position: relative;
+            display: inline-block;
+            left: 23.5%;
+        }
+
+        #email {
+
+            padding-right: 350px;
+            padding-top: 23px;
+            padding-bottom: 23px;
+
+        }
+
+        .btn {
+
+            padding: 18px 40px 20px 15px;
+            border: black solid 1px;
+            background-color: rgb(244, 6, 18);
+            font-size: larger;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+        }
+
+        .div2 {
+            background-color: black;
+            /* border: pink solid 2px; */
+            height: 520px;
+        }
+
+        .div2i {
+            /* border: yellow solid 2px; */
+            display: inline-block;
+            height: 400px;
+            background-color: black;
+            margin: 7px 0px 7px 0px;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            font-size: 30px;
+            text-align: center;
+            width: 550px;
+            padding-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+
+        .div3 {
+            /* border: red solid 2px; */
+            margin: 10px 0px 10px 0px;
+            height: 400px;
+            background-color: black;
+
+        }
+
+        .div3i {
+            /* border: yellow solid 2px; */
+            display: inline-block;
+            position: relative;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            left: 385px;
+            top: -27px;
+            font-size: 18px;
+            /* padding: 100px; */
+            width: 467px;
+
+        }
+
+        .div3x {
+            background-color: black;
+            /* border: pink solid 2px; */
+            height: 64px;
+            margin-bottom: 15px;
+            
+        }
+
+        .div4{
+            height :400px;
+            /* border: red solid 2px; */
+            background-color: black;
+            
+        }
+
+        .div4i {
+            /* border: yellow solid 2px; */
+            display: inline-block;
+            height: 290px;
+            background-color: black;
+            
+            color: rgb(255, 255, 255);
+            font-weight: 400;
+            font-size: 18px;
+            
+            width: 500px;
+            padding-top: 100px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .div5{
+            height :450px;
+            /* border: red solid 2px; */
+            background-color: black;
+            margin: 9px 0px;
+        }
+
+        .div5i{
+            /* border: yellow solid 2px; */
+            display: inline-block;
+            position: relative;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            left: 367px;
+            top: -17px;
+            font-size: 18px;
+            /* padding: 100px; */
+            width: 467px;
+        }
+
+        .div6{
+            background-color: black;
+            margin-top: 10px;
+            height: 1000px;
+            /* border: green solid 2px; */
+        }
+
+        .div6i{
+            background-color: rgb(64, 62, 62);
+            
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            /* border: sandybrown solid 2px; */
+            padding-left: 20px;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        #a{
+            background-color: black;
+            padding-top: 52px;
+            text-align: center;
+            font-size: 50px;
+            width: 1310px;
+            margin-bottom: 30px;
+            
+        }
+
+        .setpos{
+            position: relative;
+            left: 300px;
+            color: white;
+            font-size: xx-large;
+            background-color: rgb(64, 62, 62);
+            padding-left:20px;
+            padding-top: 20px;
+            height: 60px;
+            width: 750px;
+            margin-top: 10px;
+
+        }
+
+        .setpos>svg{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            right: 10px;
+        }
+
+        .div6 >p{
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            padding-left: 100px;
+            padding-right: 100px;
+            
+            height: 200px;
+            margin-left: 120px;
+            margin-right: 120px;
+            margin-top:120px ;
+           
+            
+            
+
+        }
+
+        .div5>p{
+            color: #737373;
+            font-size: 1.2rem;
+            display: inline-block;
+            left: 200px;
+            position: relative;
+            top: 100px;
+        }
+
+        .item{
+         font-size: 13px;
+         color: #737373;
+        }
+
+        .lastbutton{
+            font-size: 18px;
+            position: relative;
+            left: 200px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0);
+            color: #737373;
+        }
+
+        .imagediv4{
+            position: relative;
+            top: -260px;
+            left: 670px;
+            z-index: 1;
+        }
+
+        .div2image{
+            position: relative;
+            left: 25px;
+            z-index: 1;
+        }
+
+        .div2vid{
+           position: relative;
+           top: -420px;
+           left: 850px;
+           
+        }
+        .div4vid{
+            position: relative;
+            top: -353px;
+            left: 154px;
+        }
+        .try{
+            position: absolute;
+            background: url(https://assets.nflxext.com/ffe/siteui/vlv3/701eec50-4b87-4dc0-9d00-b0f54025dc36/028e62d2-2a59-4fc3-adaa-a0756a0512b9/IN-en-20220905-popsignuptwoweeks-perspective_alpha_website_small.jpg) no-repeat center center/cover;
+            height: 670px;
+            width: 100%;
+            filter: brightness(40%);
+            z-index: -1;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="try">
+
+    </div>
+    <div id="background">
+
+
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix logo">
+            <select name="" id="language">
+                <option value=""> ⚛ English</option>
+                <option value=""> ⚛ Hindi</option>
+            </select>
+            <button>Sign IN</button>
+        </header>
+
+        <div class="written">
+            <h1 style="margin: 10px; z-index: 1;">Unlimited movies, TV shows and more.</h1>
+            <h3 style="margin: 10px;">Watch anywhere. Cancel anytime.</h3>
+            <p style="margin: 20px;">Ready to watch? Enter your email to create or restart your membership.</p>
+        </div>
+
+        <div class="mail">
+            <input type="email" placeholder="Email address" id="email" style="border: black solid 1px;">
+            <button class="btn">Get Started ></button>
+        </div>
+    </div>
+    <div class="div2">
+
+        <div class="div2i">
+
+            <h1>Enjoy on your TV.</h1>
+            <h2>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+             
+        </div>
+
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" class="div2image" height="375px" width="500px">
+        <video class="div2vid" width="360" height="300" controls >
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v">
+        </video>
+
+    </div>
+
+    <div class="div3">
+
+        <div style="display:inline-block; position:relative; left:200px; top:50px;"> <img
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" height=""
+                width="400px"></div>
+
+        <div class="div3i">
+            <h1>Download your shows to watch offline.</h1>
+
+            <h2>Save your favourites easily and always have something to watch.</h2>
+        </div>
+         <div class="div3x"></div>
+         <div class="div4">
+            <div class="div4i">
+                <h1>Watch everywhere.</h1>
+                <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" class="imagediv4" height="375px" width="500px">
+            </div>
+            <video width="313" height="335" class="div4vid">
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v">
+            </video>
+         </div>
+
+         <div class="div5">
+
+            <div style="display:inline-block;  position:relative; left:200px; top:50px;"> <img
+                src="https://occ-0-4079-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png?r=420" height=""
+                width="400px"></div>
+            <div class="div5i">
+                <h1>Create profiles for children.</h1>
+
+                <h3>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
+            </div>
+
+         </div>
+
+         <div class="div6">
+            <div class="div6i" id="a">
+                Frequently Asked Questions
+            </div>
+
+            <div class="setpos">
+               What is Netflix
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              
+            </div>
+
+            <div class="setpos">
+                How much does Netflix cost?
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+
+            <div class="setpos">
+                Where can i watch?
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+
+            <div class="setpos">
+                How do i cancel?
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+
+            <div class="setpos">
+                What can i watch on Netflix?
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+
+            <div class="setpos">
+                Is Netflix good for kids?
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+             
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="mail">
+                <input type="email" placeholder="Email address" id="email" style="border: black solid 1px;">
+                <button class="btn">Get Started ></button>
+            </div>
+        </div>
+
+        <div class="div5">
+            <p>Questions? Call 000-800-040-1843 </p>
+            
+            
+            <div class="container">
+                <a href="#" class="item">FAQ</a>
+                <a href="#" class="item">Help Centre</a>
+                <a href="#" class="item">Account</a>
+                <a href="#" class="item">Media Centre</a>
+                <a href="#" class="item">Invester Relations</a>
+                <a href="#" class="item">Jobs</a>
+                <a href="#" class="item">Ways to Watch</a>
+                <a href="#" class="item">Terms of Use</a>
+                <a href="#" class="item">Privacy</a>
+                <a href="#" class="item">Cookie Prefrences</a>
+                <a href="#" class="item">Corpporate Information</a>
+                <a href="#" class="item">Contact Us</a>
+                <a href="#" class="item">Speed Test</a>
+                <a href="#" class="item">Legal Notices</a>
+                <a href="#" class="item">Only on Netflix</a>
+            </div>
+            
+            <select name="" class="lastbutton">
+                <option value=""> ⚛ English</option>
+                <option value=""> ⚛ Hindi</option>
+            </select>
+            <br>
+            <span class="lastbutton" style="font-size: 10px ;">Netflix India</span>
+        </div>
+         
+
+</body>
+
+</html>
